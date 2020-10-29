@@ -9,6 +9,11 @@ interface NaCLKeyPair {
   secretKey: Uint8Array;
 }
 
+interface SerializedNaCLKeyPair {
+  publicKeyB64: string;
+  secretKeyB64: string;
+}
+
 export interface Encrypted {
   nonce: string;
   ciphertext: string;
@@ -57,6 +62,23 @@ export function normalizeClearData(data: string | Uint8Array): Uint8Array {
 export function createEncriptionKeyPair(): NaCLKeyPair {
   const keypair = nacl.sign.keyPair();
   return convertKeyPair(keypair);
+}
+
+/** */
+export function serializeKey(keypair: NaCLKeyPair): SerializedNaCLKeyPair {
+  return {
+    publicKeyB64: naclutil.encodeBase64(keypair.publicKey),
+    secretKeyB64: naclutil.encodeBase64(keypair.secretKey),
+  };
+}
+
+export function deserializeKey(
+  serializedKeyPair: SerializedNaCLKeyPair
+): NaCLKeyPair {
+  return {
+    publicKey: naclutil.decodeBase64(serializedKeyPair.publicKeyB64),
+    secretKey: naclutil.decodeBase64(serializedKeyPair.secretKeyB64),
+  };
 }
 
 /**

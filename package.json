@@ -18,7 +18,8 @@
     "format:check": "prettier --check '**/*.{ts,md,yml}' '!pkg/**'",
     "lint": "eslint '{src,test}/**'",
     "test": "jest --coverage",
-    "version": "npm run build"
+    "version": "npm run build",
+    "example": "node example.js"
   },
   "devDependencies": {
     "@pika/pack": "^0.5.0",
