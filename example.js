@@ -1,3 +1,5 @@
+/* eslint-disable no-console */
+/* eslint-disable @typescript-eslint/no-var-requires */
 const {
   createEncriptionKeyPair,
   serializeKey,

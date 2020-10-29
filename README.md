@@ -2,9 +2,9 @@
 
 [![Build Status](https://github.com/notabene-id/notabene-crypto/workflows/build/badge.svg)](https://github.com/notabene-id/notabene-crypto/actions)
 [![License](https://img.shields.io/github/license/notabene-id/notabene-crypto.svg?color=blue)](./LICENSE.md)
-![npm](https://img.shields.io/npm/v/notabene-crypto)
+![npm](https://img.shields.io/npm/v/@notabene/crypto)
 ![GitHub last commit](https://img.shields.io/github/last-commit/notabene-id/notabene-crypto)
-[![codecov](https://codecov.io/gh/Notabene-id/notabene-crypto/branch/master/graph/badge.svg)](https://codecov.io/gh/Notabene-id/notabene-crypto)
+[![codecov](https://codecov.io/gh/Notabene-id/notabene-crypto/branch/main/graph/badge.svg)](https://codecov.io/gh/Notabene-id/notabene-crypto)
 
 Documentation: https://notabene-id.github.io/notabene-crypto/
 
