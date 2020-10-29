@@ -108,5 +108,8 @@
   "lint-staged": {
     "{src,test}/**": "eslint",
     "*.{ts,md,yml}": "prettier --write"
+  },
+  "publishConfig": {
+    "access": "public"
   }
 }
