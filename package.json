@@ -19,6 +19,7 @@
     "lint": "eslint '{src,test}/**'",
     "test": "jest --coverage",
     "version": "npm run build",
+    "publish": "pika publish --any-branch",
     "example": "node example.js"
   },
   "devDependencies": {
